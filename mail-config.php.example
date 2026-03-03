@@ -1,0 +1,12 @@
+<?php
+// SMTP Configuration for Rhizia contact form
+// Copy this file to ~/domains/rhizia.fr/mail-config.php on the server
+// Do NOT commit the actual mail-config.php (it's in .gitignore)
+
+define('MAIL_SMTP_HOST', 'smtp.hostinger.com');  // or smtp.ionos.fr depending on provider
+define('MAIL_SMTP_PORT', 465);
+define('MAIL_SMTP_USER', 'contact@rhizia.fr');
+define('MAIL_SMTP_PASS', 'YOUR_PASSWORD_HERE');
+define('MAIL_FROM',      'contact@rhizia.fr');
+define('MAIL_FROM_NAME', 'Rhizia');
+define('MAIL_TO',        'contact@rhizia.fr');

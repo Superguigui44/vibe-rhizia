@@ -150,6 +150,7 @@ function initContactForm() {
       if (result.success) {
         successEl.textContent = 'Message envoyé ! Merci pour votre intérêt. Nous avons bien reçu votre message à contact@rhizia.fr.'
         successEl.className = 'form-message success'
+        successEl.style.display = ''
         form.reset()
       } else {
         throw new Error(result.message || 'Erreur inconnue')
@@ -157,6 +158,7 @@ function initContactForm() {
     } catch {
       errorEl.textContent = "Erreur d'envoi. Veuillez réessayer ou nous écrire directement à contact@rhizia.fr"
       errorEl.className = 'form-message error'
+      errorEl.style.display = ''
     } finally {
       btn.innerHTML = originalHTML
       btn.disabled = false

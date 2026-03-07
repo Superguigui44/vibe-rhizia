@@ -90,6 +90,11 @@ ul {
   padding: 0 24px;
 }
 
+.hp-field {
+  position: absolute;
+  left: -9999px;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

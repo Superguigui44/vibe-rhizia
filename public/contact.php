@@ -24,6 +24,13 @@ require __DIR__ . '/vendor/autoload.php';
 
 $data = json_decode(file_get_contents('php://input'), true);
 
+// Honeypot anti-spam
+$honeypot = trim($data['website'] ?? '');
+if ($honeypot !== '') {
+    echo json_encode(['success' => true, 'message' => 'Message envoyé avec succès.']);
+    exit;
+}
+
 $name = trim($data['name'] ?? '');
 $email = trim($data['email'] ?? '');
 $companyType = trim($data['company_type'] ?? '');

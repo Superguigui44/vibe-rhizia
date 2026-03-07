@@ -241,6 +241,12 @@
           <textarea id="message" name="message" rows="5" placeholder="Parlez-nous de votre projet..." required></textarea>
         </div>
 
+        <!-- Honeypot anti-spam -->
+        <div class="hp-field" aria-hidden="true">
+          <label for="website">Website</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+        </div>
+
         <button type="submit" class="form-submit" id="formSubmit">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
           Envoyer le message

@@ -135,7 +135,8 @@ function initContactForm() {
       name: form.querySelector('#name').value,
       email: form.querySelector('#email').value,
       company_type: form.querySelector('#company-type').value,
-      message: form.querySelector('#message').value
+      message: form.querySelector('#message').value,
+      website: form.querySelector('#website').value
     }
 
     try {
